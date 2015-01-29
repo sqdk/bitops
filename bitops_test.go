@@ -1,7 +1,6 @@
 package bitops
 
 import (
-	"fmt"
 	"testing"
 )
 
