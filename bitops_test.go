@@ -45,3 +45,16 @@ func TestQueryBit(t *testing.T) {
 		t.Error("Failed query bit true test")
 	}
 }
+
+func TestFlipAll(t *testing.T) {
+	var testInt uint64
+	testInt = 32
+
+	for i := 0; i < 64; i++ {
+		SetBit(&testInt, i, true)
+	}
+	
+	if ^uint64(0) != testInt {
+		t.Error("Failed to flip all")
+	}
+}
