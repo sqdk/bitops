@@ -33,10 +33,6 @@ func TestQueryBit(t *testing.T) {
 	var testInt uint64
 	testInt = 32
 
-	for i := 0; i < 64; i++ {
-		fmt.Println(QueryBit(&testInt, i))
-	}
-
 	if QueryBit(&testInt, 2) {
 		t.Error("Failed query bit false test")
 	}
