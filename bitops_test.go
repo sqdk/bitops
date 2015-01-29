@@ -37,7 +37,7 @@ func TestQueryBit(t *testing.T) {
 		t.Error("Failed query bit false test")
 	}
 
-	if !QueryBit(&testInt, 4) {
+	if !QueryBit(&testInt, 5) {
 		t.Error("Failed query bit true test")
 	}
 }
