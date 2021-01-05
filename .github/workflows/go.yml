@@ -12,6 +12,11 @@ jobs:
     runs-on: [self-hosted, linux]
     steps:
     - uses: actions/checkout@v2
+    - name: Test docker
+      run: |
+         echo test
+         docker ps
+         docker pull alpine
 
     - name: Set up Go
       uses: actions/setup-go@v2
